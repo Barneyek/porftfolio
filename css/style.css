@@ -32,6 +32,24 @@ h4 {
     font-size: 2rem;
 }
 
+h5 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #6f6f6f;
+}
+
+hr {
+    margin: 0 auto 40px;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, .0001);
+}
+
+.optionsSection {
+    padding: 25px 0;
+}
+
 
 /*   BUTTONS HEADER  */
 
@@ -65,8 +83,14 @@ h4 {
     opacity: 0.75;
 }
 
+/*-=-=-=-=-=-=-=-=-=-=- */
 
-/******************************/
+
+/* HEADER & UNDERHEADER */
+
+
+/*-=-=-=-=-=-=-=-=-=-=- */
+
 #up {
     background-image: url("../images/wordpress.jpg");
     background-position: center center;
@@ -100,11 +124,13 @@ h4 {
     overflow: hidden;
     border-radius: 100%;
 }
+
 .check {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .aboutMe {
     display: flex;
     justify-content: center;
@@ -114,7 +140,7 @@ h4 {
 
 .title {
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
     font-weight: 300;
 }
 
@@ -123,7 +149,8 @@ h4 {
     background-repeat: repeat;
     background-position: center;
     position: relative;
-    padding: 35px 20px 30px 35px;
+    padding: 35px 0 30px 0;
+    TEXT-ALIGN: CENTER;
 }
 
 .happyClients {
@@ -174,6 +201,7 @@ h4 {
     }
 }
 
+
 /*-=-=-=-=-=-=-=-=-=-=- */
 
 
@@ -190,7 +218,6 @@ h4 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-       
     justify-content: center;
 }
 
@@ -318,6 +345,7 @@ h4 {
     line-height: 3;
     transition: all .3s ease-in-out;
 }
+
 .icons .item-gi {
     position: relative;
     height: 58px;
@@ -365,6 +393,7 @@ h4 {
     box-shadow: inset 0 0 5px 0 rgba(0, 0, 0, .08);
 }
 
+
 /*-=-=-=-=-=-=-=-=-=-=- */
 
 
@@ -373,15 +402,10 @@ h4 {
 
 /*-=-=-=-=-=-=-=-=-=-=- */
 
-#portfolio {
-    padding-bottom: 150px;
-}
-
 .portfolioGallery {
     display: inline-block;
-    border: 0;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     position: relative;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1);
@@ -393,21 +417,33 @@ h4 {
     transform: scale(1);
 }
 
+@media only screen and (max-width:640px) {
+    .portfolioGallery {
+        width: 315px;
+        height: 315px;
+    }
+    #portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .portfolioGallery:hover {
-    box-shadow: 0px 0px 150px #000000;
+    box-shadow: 0px 0px 30px #000000;
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.2);
     -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);
+    -ms-transform: scale(1.2);
     -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
+    -moz-transform: scale(1.2);
     transition: all 200ms ease-in;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .hi-icon-effect-6 .hi-icon {
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 1);
     transition: background 0.2s, color 0.2s;
 }
 
@@ -417,7 +453,7 @@ h4 {
 }
 
 .no-touch .hi-icon-effect-6 .hi-icon:hover:before {
-    animation: spinAround 2s linear infinite;
+    animation: spinAround 3s linear infinite;
 }
 
 @keyframes spinAround {
@@ -427,4 +463,35 @@ h4 {
     to {
         transform: rotate(360deg);
     }
+}
+
+.pom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+
+/*-=-=-=-=-=-=-=-=-=-=- */
+
+
+/*     WebDesigner      */
+
+
+/*-=-=-=-=-=-=-=-=-=-=- */
+
+.webDescription {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 300;
+    letter-spacing: 0px;
+
+}
+
+#WebDesigner {
+    background-image: url(../images/home_webdesign_about_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-top: 130px;
+    padding-bottom: 100px;
 }
