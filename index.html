@@ -9,7 +9,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!--CSS -->
     <link href="css/style.css" rel="stylesheet" media="screen">
-    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <!--Lightslider -->
+    <link rel="stylesheet" href="css/lightslider.css" />
     <!--Font -->
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700,900" rel="stylesheet">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -18,8 +19,6 @@
 </head>
 
 <body>
-
-    <!--#########HEADER########## --->
     <header id="up">
         <div class="container">
             <div class="row">
@@ -41,13 +40,15 @@
             </section>
             <section class="buttonsHeader">
                 <div class="center-block text-center">
-                    <button type="button" class="btn-portoflio btn-lg">&nbsp; ZOBACZ PORTFOLIO  &nbsp;</button>&nbsp;&nbsp;
+                    <a href="#portfolio"><button type="button" class="btn-portoflio btn-lg">&nbsp; ZOBACZ PORTFOLIO  &nbsp;</button>&nbsp;&nbsp;</a>
                     <button type="button" class="btn-hire btn-lg">&nbsp; ZATRUDNIJ MNIE &nbsp; </button>
                 </div>
             </section>
         </div>
     </header>
+
     <!--#########UnderHeader########## --->
+
     <section id="underHeader" class="optionsSection">
         <div class="container">
             <div class="row">
@@ -85,14 +86,16 @@
             </div>
         </div>
     </section>
+
     <!--#######PORTFOLIO######### --->
+
     <section id="portfolio" class="optionsSection">
         <h2 class="title">Moje <b>Portoflio</b></h2>
         <h4></h4>
         <div class="container-fluid">
             <div class="row">
 
-                <div class=" col-sm-12 col-md-6 col-lg-4">
+                <div class=" col-sm-12 col-md-6 col-lg-4 nopaddding">
                     <div class="pom">
                         <div class="portfolioGallery">
                             <a href="http://highlander.pl/" class="thumbnail">
@@ -102,7 +105,7 @@
                     </div>
 
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 nopaddding">
                     <div class="pom">
                         <div class="portfolioGallery">
                             <a href="http://www.akademia-awm.pl/" class="thumbnail">
@@ -111,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 nopaddding">
                     <div class="pom">
                         <div class="portfolioGallery">
                             <a href="https://fundacjahumboldta.pl/" class="thumbnail">
@@ -120,101 +123,129 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class=" col-sm-12 col-md-6 col-lg-4 nopaddding">
+                    <div class="pom">
+                        <div class="portfolioGallery">
+                            <a href="http://highlander.pl/" class="thumbnail">
+                                <img src="images/highlander.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 nopaddding">
                     <div class="pom">
                         <div class="portfolioGallery">
-                            <a href="http://fitflow.pl/home/" class="thumbnail">
-                                <img src="images/fitflow.jpg" class="img-responsive">
+                            <a href="http://www.akademia-awm.pl/" class="thumbnail">
+                                <img src="images/akademia.jpg" class="img-responsive">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 nopaddding">
                     <div class="pom">
                         <div class="portfolioGallery">
-                            <a href="http://fitflow.pl/home/" class="thumbnail">
-                                <img src="images/fitflow.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <div class="pom">
-                        <div class="portfolioGallery">
-                            <a href="http://fitflow.pl/home/" class="thumbnail">
-                                <img src="images/fitflow.jpg" class="img-responsive">
+                            <a href="https://fundacjahumboldta.pl/" class="thumbnail">
+                                <img src="images/humboldt.jpg" class="img-responsive">
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
+<!--#########ABOUT-ME-WEB-DESIGNER############# --->
     <section id="WebDesigner" class="optionsSection">
         <div class="row">
-              <div class="underPortfolio">
-            <div class="col-lg-1">
+            <div class="underPortfolio">
+                <div class="col-lg-1">
 
-            </div>
-            <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
 
-                <h3 class="webDescription">We focus on attracting<br> the users to the <b>content</b><br> they’re looking for</h3>
-                <hr class="no_line">
-                <h5>Per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentuu</h5>
-                <hr class="no_line">
-                <h5> Sed ut imperdiet nisi. Proin condimentu</h5>
+                    <h3 class="webDescription">We focus on attracting<br> the users to the <b>content</b><br> they’re looking for</h3>
+                    <hr class="no_line">
+                    <h5>Per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentuu</h5>
+                    <hr class="no_line">
+                    <h5> Sed ut imperdiet nisi. Proin condimentu</h5>
                 </div>
 
-            <div class="col-lg-5">
+                <div class="col-lg-5">
 
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
+    <!--#########SLIDER-SKILLS########## --->
+    <section id="mySkills" class="optionsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="whiteDescription">Moje <b> Umiejętności</b></h2>
+                    <h4 class="whiteDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam esse doloremque! Possimus laborum earum a necessitatibus esse, cumque ullam. xx</h4>
 
-    <!--#########FOOTER########## --->
-<section id="mySkils" style="background-color:black;">
-    <div class="container">
-        <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h2>Moje <b> Umiejętności</b></h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam esse doloremque! Possimus laborum earum a necessitatibus esse, cumque ullam. xx</h4>
+                    <div class="demo">
+                        <div class="item">
+                            <div class="clearfix">
+                                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+                                    <li>
+                                        <img src="images/css-logo.png" />
+                                    </li>
+                                    <li>
+                                        <img src="images/html-5-logo.png" />
+                                    </li>
+                                    <li>
+                                        <img src="images/css-logo.png" />
+                                    </li>
+                                    <li>
+                                        <img src="images/html-5-logo.png" />
+                                    </li>
+                                    <li>
+                                        <img src="images/css-logo.png" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <ul id="content-slider" class="content-slider">
+                                <li>
+                                    <h3>1</h3>
+                                </li>
+                                <li>
+                                    <h3>2</h3>
+                                </li>
+                                <li>
+                                    <h3>3</h3>
+                                </li>
+                                <li>
+                                    <h3>4</h3>
+                                </li>
+                                <li>
+                                    <h3>5</h3>
+                                </li>
+                                <li>
+                                    <h3>6</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-                <img src="/images/8_9.jpg" alt="" class="img-responsive">
-            </div>
-             <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-                <img src="/images/8_9.jpg" alt="" class="img-responsive">
-            </div>
-             <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-                <img src="/images/8_9.jpg" alt="" class="img-responsive">
-            </div>
-             <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-                <img src="/images/8_9.jpg" alt="" class="img-responsive">
-            </div>
-             <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
-                <img src="/images/8_9.jpg" alt="" class="img-responsive">
-            </div>
+    </section>
 
-        </div>
-    </div>
-</section>
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
 
-
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/smooth.js"></script>
+    <script src="js/slider_carousel.js"></script>
 </body>
+
 
 </html>
