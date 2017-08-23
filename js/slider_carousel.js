@@ -2,13 +2,15 @@
             $("#content-slider").lightSlider({
                 loop: true,
                 keyPress: true,
-                controls:false
+                controls:false,
+                speed: 500,
+                auto: true,
+                loop: true
             });
             $('#image-gallery').lightSlider({
                 controls:false,
                 gallery: true,
-                item: 1,
-                thumbItem: 5,
+                item: 4,
                 slideMargin: 0,
                 speed: 500,
                 auto: true,
