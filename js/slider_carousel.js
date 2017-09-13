@@ -6,6 +6,7 @@
                 speed: 500,
                 auto: true,
                 controls:true,
+             centerSlide:true,
                 loop: true,
                 onSliderLoad: function() {
                     $('#image-gallery').removeClass('cS-hidden');
